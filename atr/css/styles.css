@@ -1,0 +1,57 @@
+body{
+    background-color: black;
+}
+
+.header-conteiner {
+    display: flex;
+    justify-content: center;
+    align-items: center;             
+    padding: 20px;
+    position: relative;
+}
+
+.name {
+    color: white;
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px; 
+    transition: all 0.3s ease;
+    text-shadow: 0 0 10px #12349d,   /* ближнее свечение */
+                 0 0 20px #12349d,    /* среднее свечение */
+                 0 0 30px #12349d;    /* дальнее свечение */
+}
+
+.name:hover {
+    text-shadow: 0 0 10px #4663bd,
+                 0 0 20px #4663bd,
+                 0 0 30px #4663bd;
+    transform: scale(1.05);         /* легкое увеличение */
+}
+
+.name-company {
+    color: white;
+    font-family: 'Arial', sans-serif;
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 3px; 
+    transition: all 0.3s ease;
+    text-shadow: 0 0 10px #6b0f0f,   /* ближнее свечение */
+                 0 0 20px #6b0f0f,    /* среднее свечение */
+                 0 0 30px #6b0f0f;    /* дальнее свечение */
+}
+
+.choice-company {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+
+.name-company:hover {
+    text-shadow: 0 0 10px #df2525,
+                 0 0 20px #df2525,
+                 0 0 30px #df2525;
+    transform: scale(1.05); 
+}   
