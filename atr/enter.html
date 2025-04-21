@@ -8,25 +8,28 @@
     </head>
 
     <body>
+        <!--Приветственные слова-->
         <div class="window-enter">
             <div class="window-enter-text">
                 <p class="window-enter-text1">Привет, Дальнобойщик!</p>
                 <p class="window-enter-text2">Авторизируйся!</p>
             </div>    
         </div>
+        <!--Кнопка входа в модальное окно-->
         <div class="window-enter-button">
             <p id="openModalBtn" class="window-enter-button-enter">Войти</p>
         </div>
-        
+
         <!-- Модальное окно -->
         <div id="window-modal" class="modal">
+            <!--Шапка модального окна-->
             <div class="modal-content">
-                <p>
-                    <span class="close">&times;</span>
-                    <h2 class="modal-name-button">Вход</h2>
-                </p>
+                <!--Крестик и вход-->
+                <span class="close">&times;</span>
+                <h2 class="modal-name-button">Авторизация</h2>
             </div>
             <form>
+                <!--Логин и пароль-->
                 <p>
                     <label for="username">Логин:</label>
                     <input type="text" id="username" name="username">
@@ -36,6 +39,6 @@
                 </p>
             </form>
          </div> 
-         <script> src="js/main.js"</script>
+         <script src="js/main.js"></script>
     </body>
 </html>
