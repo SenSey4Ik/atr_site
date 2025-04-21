@@ -4,30 +4,47 @@
         <meta charset="UTF-8">
         <title>Заявки ATR и PHOENIX</title>
         <link rel="stylesheet" href="css/styles.css">
+        <link rel="icon" href="images/phoenix_logo.png">
     </head>
 
     <body>
         <header>
             <div class="header-conteiner">
                 <h1 class="name">Заявки</h1>
-                <button class= "enter-btn">Вход</button>
+                <button id="openModalBtn" class="enter-btn">Вход</button>
             </div>
+            <!-- Модальное окно -->
+             <div id="window-modal" class="modal">
+                <div class="modal-content">
+                    <p>
+                        <span class="close">&times;</span>
+                        <h2 class="modal-name-button">Вход</h2>
+                    </p>
+                </div>
+                <form>
+                    <p>
+                        <label for="username">Логин:</label>
+                        <input type="text" id="username" name="username">
+                        <label for="password">Пароль:</label>
+                        <input type="text" id="password" name="password">
+                        <button type="submit">Вход</button>
+                    </p>
+                </form>
+             </div>   
         </header>
 
         <main>
             <div class="main-conteiner">
-                <div class="choice-company">
-                    <p class="name-company"> Выберите компанию:</p>        
-                </div>
-
+                <p class="name-company"> Выберите компанию:</p>        
                 <div class="image-company">
-                    <img src="images/ATR_logo.png" alt="Компания ATR", class="company-ATR">
-                    <img src="images/phoenix_logo.png" alt="Компания PHOENIX", class="company-phoenix">
+                    <img src="images/ATR_logo.png" alt="Компания ATR" class="company-ATR">
+                    <a href="phoenix.html">
+                        <img src="images/phoenix_logo.png" alt="Компания PHOENIX", class="company-phoenix">
+                    </a>
                 </div>
-
-    
             </div>
         </main>
+        <script src="js/main.js"></script>
     </body>
 
 
