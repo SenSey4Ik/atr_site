@@ -14,8 +14,107 @@
             </div>
         </header>
 
-        <main>
-
+        <main> 
+            <div class="main-form-phoenix">
+                <form action="/submit-form" method="post">
+                    <div class="y-customer">
+                        <label for="customer">Заказчик: </label>
+                        <input type="text" id="customer" name="customer">
+                    </div>
+                    <div class="y-telephone">
+                        <label for="telephone">Тел/Факс: </label>
+                        <input type="tel" id="telephone" name="telephone">
+                    </div>
+                    <div class="y-number-contract">
+                        <label for="number-contract">Договор-заявка на осуществление перевозки №: </label>
+                        <input type="text" id="number-contract" name="number-contract">
+                    </div>
+                    <div class="y-adress-loading">
+                        <label for="adress-loading">Адрес погрузки: </label>
+                        <input type="date" id="adress-loading" name="adress-loading">
+                    </div>
+                    <div class="y-name-of-the-shipper">
+                        <label for="name-of-the-shipper">Наименование грузоотправителя: </label>
+                        <input type="text" id="name-of-the-shipper" name="name-of-the-shipper">
+                    </div>
+                    <div class="y-contact-face-post">
+                        <label for="contact-face">Контактное лицо; Телефон: </label>
+                        <input type="tel" id="contact-face" name="contact-face">
+                    </div>
+                    <div class="y-date-and-time-loading">
+                        <label for="date-and-time-loading">Дата и время: </label>
+                        <input type="datetime-local" id="date-and-time-loading" name="date-and-time-loading">
+                    </div>
+                    <div class="y-cargo">
+                        <label for="cargo">Груз (наименование): </label>
+                        <input type="text" id="cargo" name="cargo">
+                    </div>
+                    <div class="y-dimensions">
+                        <label for="dimensions">Вес, объем, габариты: </label>
+                        <input type="text" id="dimensions" name="dimensions">
+                    </div>
+                    <div class="y-adress-unloading">
+                        <label for="adress-unloading">Адрес разгрузки: </label>
+                        <input type="text" id="adress-unloading" name="adress-unloading">
+                    </div>
+                    <div class="y-name-consignee">
+                        <label for="name-consignee">Наименование грузополучателя: </label>
+                        <input type="text" id="name-consignee" name="name-consignee">
+                    </div>
+                    <div class="y-contact-face-get">
+                        <label for="contact-face-get">Контактное лицо; Телефон: </label>
+                        <input type="tel" id="contact-face-get" name="contact-face-get">
+                    </div>
+                    <div class="y-date-and-time-unloading">
+                        <label for="date-and-time-unloading">Дата и время разгрузки: </label>
+                        <input type="datetime-local" id="date-and-time-unloading" name="date-and-time-unloading">
+                    </div>
+                    <div class="y-price">
+                        <label for="price">Стоимость перевозки (руб): </label>
+                        <input type="number" id="price" name="price">
+                    </div>
+                    <div class="y-form-and-term">
+                        <label for="form-and-term">Форма и срок оплаты: </label>
+                        <input type="number" id="form-and-term" name="form-and-term">
+                    </div>
+                    <div class="y-additional-conditions">
+                        <label for="additional-conditions">Дополнительные условия: </label>
+                        <textarea id="additional-conditions" name="additional-conditions" row="5", cols="50"></textarea>
+                    </div>
+                    <div class="y-name-driver">
+                        <label for="name-driver">Выберите водителя: </label>
+                        <select id="name-driver" name="name-driver">
+                            <option value="">Не выбрано</option>
+                        </select>
+                    </div>
+                    <div class="y-the-customer-is-obliged">
+                        <label for="the-customer-is-obliged">Заказчик обязан: </label>
+                        <textarea id="the-customer-is-obliged" name="the-customer-is-obliged" row="5", cols="50">- обеспечить погрузку / выгрузку автомобиля в течение 12 часов с момента его подачи;
+                            - за сверхнормативный простой Заказчик оплачивает  штраф в размере 3000 руб./ сутки. 
+                            - в случае отказа от поданного автомобиля Заказчик оплачивает 20% от стоимости фрахта.
+                            </textarea>
+                    </div>
+                    <div class="y-the-forwarder-is-obliged">
+                        <label for="the-forwarder-is-obliged">Экспедитор обязан: </label>
+                        <textarea id="the-forwarder-is-obliged" name="the-forwarder-is-obliged" row="5", cols="50">- обеспечить подачу под загрузку автомобиля, удовлетворяющего условиям Заявки, в технически исправном состоянии;
+                            - подача автомобиля производиться в указанное в Заявке время; 
+                            - в случае опоздания автомобиля на погрузку/выгрузку, перевозчик оплачивает штраф в размере 2500 руб. \ сутки. 
+                            - принимать и сдавать груз по количеству и качеству, следить за правильностью погрузки, крепления и распределения груза; 
+                            - в случае не предоставления подтвержденного Заявкой автомобиля, Перевозчик оплачивает 20% от стоимости фрахта.
+                            При опоздании под разгрузку более чем на 3 (трое)суток  Заказчик вправе взыскать с Перевозчика неустойку в размере 10 % от фрахта.
+                            Факсимильная копия заявки- действительна. 
+                            </textarea>
+                    </div>
+                    <div class="y-inn">
+                        <label for="inn">Введите ИНН Заказчика: </label>
+                        <input type="number" id="inn" name="inn">
+                    </div>
+                    <div class="y-button-form-phoenix">
+                        <button type="submit">Сформировать документ</button>
+                    </div>
+                </form>
+            </div>
         </main>
+        <script src="js/phoenix.js"></script>
     </body>
 </html>

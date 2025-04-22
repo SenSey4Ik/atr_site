@@ -1,11 +1,11 @@
 /*Тело*/
-body{
-    background-color: black;
+body {
+    background-color: rgb(0, 0, 0);
 }
+
 
 /* Шапка */
 .header-conteiner {
-    background-color: rgba(0, 0, 0, 0.4);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -300,3 +300,198 @@ body{
                  0 0 30px #251588;    /* дальнее свечение */
 }
 
+
+/*Мэин контейнер в фениксе вся форма*/
+.main-form-phoenix{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 1500px;
+    height: 1900px;
+    background-color: rgb(188, 181, 181);
+    margin: 0 auto;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+/* Размеры для полей input в Фениксе */
+.main-form-phoenix input {
+    width: 500px;        /* ширина поля */
+    height: 50px;        /* высота поля */
+    font-size: 28px;     /* размер текста */
+    padding: 8px 16px;   /* внутренние отступы */
+    border-radius: 8px;  /* скругление углов */
+    border: 1px solid #888;
+    box-sizing: border-box; /* чтобы padding не увеличивал итоговую ширину */
+    margin-left: 20px;   /* отступ слева от label */
+}
+
+
+/* Текстареа для полей textarea в Фениксе */
+.main-form-phoenix textarea {
+    width: 700px;
+    height: 170px;
+    font-size: 28px;
+    padding: 8px 16px;
+    border-radius: 10px;
+    border: 1px solid #888;
+    box-sizing: border-box;
+    margin-left: 20px;
+}
+
+/* Для select размеры выбор водителя */
+.main-form-phoenix select {
+    width: 400px;
+    height: 50px;
+    font-size: 28px;
+    padding: 8px 16px;
+    border-radius: 10px;
+    border: 1px solid #888;
+    box-sizing: border-box;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+/* Размеры для полей кнопок button в Фениксе */
+.main-form-phoenix button {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    transform: translate(+15%,0%);
+    width: 400px;        /* ширина поля */
+    height: 100px;        /* высота поля */
+    font-size: 28px;     /* размер текста */
+    padding: 50px;   /* внутренние отступы */
+    border-radius: 50px;  /* скругление углов */
+    background: linear-gradient(90deg, #6367e3 0%, #1b0ab0 100%);
+    margin-top: 100px;
+}
+
+/* Заказчик феникс*/
+.y-customer{
+    margin: 0 0 10px 0;
+    font-size: 36px;   
+}
+
+/* Телефон феникс*/
+.y-telephone{
+    margin: 0 0 10px 0;
+    font-size: 36px   
+}
+
+/* Номер контракта феникс*/
+.y-number-contract{
+    margin: 0 0 10px 0;
+    font-size: 36px
+}
+
+/* Адрес погрузки феникс*/
+.y-adress-loading{
+    margin: 0 0 10px 0;
+    font-size: 36px
+}
+
+/* Наименование грузоотправителя феникс*/
+.y-name-of-the-shipper{
+    margin: 0 0 10px 0;
+    font-size: 36px
+}
+
+/* Контактное лицо феникс*/
+.y-contact-face-post{
+    margin: 0 0 10px 0;
+    font-size: 36px
+}
+
+/* Дата и время феникс*/
+.y-date-and-time-loading{
+    margin: 0 0 10px 0;
+    font-size: 36px
+}
+
+/* Груз феникс*/
+.y-cargo{
+    margin: 0 0 10px 0;
+    font-size: 36px
+}
+
+/* Вес, объем, габариты феникс*/
+.y-dimensions{
+    margin: 0 0 10px 0;
+    font-size: 36px
+}
+
+/*Адрес разгрузки феникс*/
+.y-adress-unloading{
+    margin: 0 0 10px 0;
+    font-size: 36px;
+}
+
+/* Наименование грузополучателя феникс*/
+.y-name-consignee{
+    margin: 0 0 10px 0;
+    font-size: 36px
+}
+
+/* Контактное лицо и телефон феникс*/
+.y-contact-face-get{
+    margin: 0 0 10px 0;
+    font-size: 36px
+}
+
+/* Дата и время разгрузки феникс*/
+.y-date-and-time-unloading{
+    margin: 0 0 10px 0;
+    font-size: 36px
+}
+
+/* Стоимость перевозки феникс*/
+.y-price{
+    margin: 0 0 10px 0;
+    font-size: 36px
+}
+
+/* Форма и срок оплаты феникс*/
+.y-form-and-term{
+    margin: 0 0 10px 0;
+    font-size: 36px
+}
+
+/* Дополнительные условия феникс*/
+.y-additional-conditions{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start; 
+    font-size: 36px;
+}
+
+/* Имя водителя феникс*/
+.y-name-driver{
+    margin: 0 0 20px 0;
+    font-size: 36px;
+}
+
+/* Заказчик обязан феникс*/
+.y-the-customer-is-obliged{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start; 
+    margin: 0 0 20px 0;
+    font-size: 36px
+}
+
+/* Экспедитор обязан феникс*/
+.y-the-forwarder-is-obliged{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start; 
+    margin: 0 0 20px 0;
+    font-size: 36px
+}
+
+/* ИНН */
+.y-inn{
+    margin: 0 0 20px 0;
+    font-size: 36px
+}
